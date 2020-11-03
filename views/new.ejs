@@ -1,0 +1,22 @@
+<%- include ("partials/header"); %>
+<div class="container">
+    <div style="width: 70%; margin: 0 auto;">
+        <h1 style="text-align: center;">Creat new</h1>
+        <form action="/blogs" method="post">
+            <div class="form-group">
+                <input type="text" placeholder="Title" name="blog[title]" id="" class="form-control">
+            </div>
+            <div class="form-group">
+                <input type="text" placeholder="Image" name="blog[image]" id="" class="form-control">
+            </div>
+            <div class="form-group">
+                <textarea name="blog[body]" class="form-control"></textarea>
+            </div>
+            <div class="form-group">
+                <button type="submit" class="btn btn-outline-primary btn-block">submit</button>
+            </div>
+        </form>
+        <a href="/">Go Back</a>
+    </div>
+</div>
+<%- include ("partials/footer"); %>
